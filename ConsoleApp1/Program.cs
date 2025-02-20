@@ -1,16 +1,17 @@
 ﻿//encapsulation
-using ConsoleApp1.src.oops.abstraction;
-using ConsoleApp1.src.oops.encapsulation;
-using ConsoleApp1.src.oops.inheritance;
 
-var car = new Car();
-//shared
-car.Brand = "Toyota";
-car.Start();
-car.Stop();
+using ConsoleApp1.src.oops.polymorphism;
 
-//unique
+List<Vehicle> vehicles = new List<Vehicle>();
+vehicles.Add(new Car{Brand = "Toyota", Model = "Corolla", year = 2019, NumberOfDoors = 4});
+vehicles.Add(new Motorcycle{Brand = "Boeing", Model = "sports", year = 2019});   
+vehicles.Add(new Plane{Brand = "Honda", Model = "Civic", year = 2019, NumberOfDoors = 4});
+ 
+ //vehicle inspection
 
-car.NumberOfDoors = 4;
-car.NumberOfWheels = 4;
+ foreach (var vehicle in vehicles)
+ {
+        vehicle.Start();
+        vehicle.Stop();
+ }
  
