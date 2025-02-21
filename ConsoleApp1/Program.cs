@@ -17,4 +17,5 @@ using ConsoleApp1.src.oops.coupling;
 //  }
 
 var Order = new Order();
+Order.placeOrder();
  
