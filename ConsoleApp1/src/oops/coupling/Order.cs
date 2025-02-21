@@ -9,7 +9,7 @@ namespace ConsoleApp1.src.oops.coupling
     {
         public void placeOrder()
         {
-            Console.WriteLine("Order placed");
+           
             EmailSender emailSender = new EmailSender();
             emailSender.SendEmail("Order placed sucessfully");
         }
